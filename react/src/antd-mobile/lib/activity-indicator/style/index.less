@@ -1,0 +1,71 @@
+@import '../../style/themes/default';
+@import '../../style/mixins';
+
+@activityIndicatorPrefixCls: am-activity-indicator;
+
+.@{activityIndicatorPrefixCls} {
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  &-spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    .encoded-svg-background('<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Oval 4 + Oval 4</title><defs><path d="M20 39.889c10.432 0 18.889-9.457 18.889-19.889C38.889 9.568 30.432.111 20 .111 9.568.111.111 9.568.111 20 .111 30.432 9.568 39.889 20 39.889z" id="a"/><mask id="b" x="0" y="0" width="38.778" height="39.778" fill="#fff"><use xlink:href="#a"/></mask></defs><g stroke-linecap="round" fill="none" fill-rule="evenodd"><use stroke="#CCC" mask="url(#b)" stroke-width="6" xlink:href="#a"/><path d="M37.931 21.307c.246-4.959-1.362-9.703-4.519-12.938" stroke="#108EE9" stroke-width="3"/></g></svg>');
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: spinner-anime 1s steps(12, end) infinite;
+  }
+
+  &-tip {
+    font-size: @font-size-base;
+    margin-left: @h-spacing-md;
+    color: @color-text-base;
+    opacity: 0.4;
+  }
+
+  &.@{activityIndicatorPrefixCls}-toast {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .@{activityIndicatorPrefixCls}-spinner {
+      margin: 0;
+    }
+    .@{activityIndicatorPrefixCls}-toast {
+      display: inline-block;
+      position: relative;
+      top: 8px;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    border-radius: 6px;
+    background-clip: padding-box;
+    color: @color-text-base-inverse;
+    background-color: rgba(34, 34, 34, 0.6);
+    font-size: @font-size-subhead;
+    line-height: 40px;
+  }
+
+  &-spinner-lg {
+    width: 64px;
+    height: 64px;
+  }
+
+  @keyframes spinner-anime {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import '../../style/mixins';
+@import '../../style/themes/default';
+@buttonPrefixCls: am-button;
+
+.@{buttonPrefixCls} {
+  width: 100%;
+  display: inline-block;
+  outline: 0 none;
+  -webkit-appearance: none;
+  .box-sizing();
+  padding: 0;
+  text-align: center;
+  font-size: @button-font-size;
+  height: @button-height;
+  line-height: @button-height;
+  .border-radius(@radius-md);
+
+  // default
+  color: @color-text-base;
+  background-color: @fill-base;
+  border: @border-width-sm solid @border-color-base;
+  // &:active, // uc browser not work normal
+  &&-active {
+    background-color: @fill-tap;
+  }
+
+  &-primary {
+    color: @color-text-base-inverse;
+    background-color: @primary-button-fill;
+    border: @border-width-sm solid @primary-button-fill;
+    // &:active, // uc browser not work normal
+    &.@{buttonPrefixCls}-active {
+      background-color: @primary-button-fill-tap;
+    }
+  }
+
+  &-ghost {
+    color: @ghost-button-color;
+    background-color: transparent;
+    border: @border-width-sm solid @ghost-button-color;
+    // &:active, // uc browser not work normal
+    &.@{buttonPrefixCls}-active {
+      color: @color-text-base-inverse;
+      background-color: @ghost-button-fill-tap;
+      border: @border-width-sm solid @ghost-button-color;
+    }
+  }
+
+  &-inline {
+    width: auto;
+    padding: 0 @h-spacing-lg;
+  }
+
+  &-small {
+    font-size: @button-font-size-sm;
+    height: @button-height-sm;
+    line-height: @button-height-sm;
+    .border-radius(@radius-md);
+    padding: 0 @h-spacing-sm;
+  }
+
+  &-warning {
+    color: @brand-warning;
+    background-color: @fill-base;
+    border: @border-width-sm solid #f88b88;
+    // &:active, // uc browser not work normal
+    &.@{buttonPrefixCls}-active {
+      background-color: #fdcccb;
+    }
+  }
+
+  &,
+  &-primary,
+  &-ghost,
+  &-warning {
+    &.@{buttonPrefixCls}-across {
+      .border-radius(0);
+      border-left: 0;
+      border-right: 0;
+    }
+    &.@{buttonPrefixCls}-disabled {
+      color: @color-text-disabled;
+      background-color: @fill-disabled;
+      border: 0;
+    }
+  }
+
+  // To ensure that a space will be placed between character and `Icon`.
+  > .anticon + span,
+  > span + .anticon {
+    margin-left: 0.5em;
+  }
+
+}

@@ -1,0 +1,14 @@
+/// <reference types="react" />
+import React from 'react';
+export interface CardFooterProps {
+    prefixCls?: string;
+    content?: any;
+    className?: string;
+    extra?: any;
+}
+export default class CardFooter extends React.Component<CardFooterProps, any> {
+    static defaultProps: {
+        prefixCls: string;
+    };
+    render(): JSX.Element;
+}

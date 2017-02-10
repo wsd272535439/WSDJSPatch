@@ -1,0 +1,38 @@
+.hairline-remove-right-bottom {
+  border-bottom: 0;
+}
+.hairline-remove-right-bottom:after {
+  display: none;
+}
+.hairline-remove-right-bottom-bak:after {
+  display: none;
+}
+.hairline-remove-left-top:before {
+  display: none;
+}
+.am-carousel {
+  position: relative;
+}
+.am-carousel-wrap {
+  font-size: 36px;
+  color: #000;
+  background: none;
+  text-align: center;
+  zoom: 1;
+  width: 100%;
+}
+.am-carousel-wrap-dot {
+  display: inline-block;
+  zoom: 1;
+}
+.am-carousel-wrap-dot > span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: #ccc;
+}
+.am-carousel-wrap-dot-active > span {
+  background: #888;
+}

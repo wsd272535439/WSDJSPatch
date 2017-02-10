@@ -1,0 +1,237 @@
+{
+  "_args": [
+    [
+      "antd-mobile",
+      "/Users/hwh/hello-world"
+    ]
+  ],
+  "_cnpm_publish_time": 1481790949910,
+  "_from": "antd-mobile@latest",
+  "_id": "antd-mobile@0.9.12",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/antd-mobile",
+  "_nodeVersion": "4.4.7",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/antd-mobile-0.9.12.tgz_1481790947671_0.7566403644159436"
+  },
+  "_npmUser": {
+    "email": "hualei5280@gmail.com",
+    "name": "warmhug"
+  },
+  "_npmVersion": "3.10.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "antd-mobile",
+    "raw": "antd-mobile",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/antd-mobile/download/antd-mobile-0.9.12.tgz",
+  "_shasum": "9a9fc38e267e9300e0f80f44adb4d15ba14c9f02",
+  "_shrinkwrap": null,
+  "_spec": "antd-mobile",
+  "_where": "/Users/hwh/hello-world",
+  "bugs": {
+    "url": "http://github.com/ant-design/ant-design-mobile/issues"
+  },
+  "config": {
+    "port": 8001
+  },
+  "dependencies": {
+    "array-tree-filter": "~1.0.0",
+    "babel-runtime": "6.x",
+    "classnames": "~2.2.1",
+    "css-vendor": "~0.3.4",
+    "moment": "~2.15.1",
+    "normalize.css": "~4.2.0",
+    "nuka-carousel": "~2.0.3",
+    "object-assign": "~4.1.0",
+    "omit.js": "~0.1.0",
+    "rc-checkbox": "~1.4.1",
+    "rc-collapse": "~1.6.6",
+    "rc-dialog": "~6.5.0",
+    "rc-drawer": "~0.4.8",
+    "rc-input-number": "~2.7.0",
+    "rc-notification": "~1.3.5",
+    "rc-slider": "~4.0.1",
+    "rc-steps": "~2.2.0",
+    "rc-swipeout": "~1.1.5",
+    "rc-table": "~4.6.0",
+    "rc-tabs": "7.0.x",
+    "rc-tooltip": "~3.4.2",
+    "react-hammerjs": "^0.5.0",
+    "react-native-camera-roll-picker": "~1.1.6",
+    "react-native-drawer-layout": "~1.0.0",
+    "react-native-menu": "~0.20.1",
+    "react-native-scrollable-tab-view": "^0.6.0",
+    "react-timer-mixin": "~0.13.3",
+    "rmc-cascader": "3.0.x",
+    "rmc-date-picker": "5.0.x",
+    "rmc-list-view": "~0.7.0",
+    "rmc-picker": "3.4.x",
+    "rn-topview": "^0.1.0",
+    "zscroller": "~0.2.2"
+  },
+  "description": "基于 React 的移动设计规范实现",
+  "devDependencies": {
+    "@types/react": "~0.14.41",
+    "@types/react-dom": "~0.14.18",
+    "@types/react-native": "~0.29.36",
+    "antd": "1.x",
+    "antd-tools": "0.14.2",
+    "babel-eslint": "^6.0.4",
+    "babel-plugin-import": "^1.0.0",
+    "babel-plugin-transform-runtime": "~6.15.0",
+    "bisheng": "^0.12.0",
+    "bisheng-plugin-antd": "~0.2.0",
+    "bisheng-plugin-description": "^0.1.1",
+    "bisheng-plugin-react": "^0.1.0",
+    "bisheng-plugin-toc": "^0.3.0",
+    "clipboard": "^1.5.5",
+    "concurrently": "~2.1.0",
+    "dom-scroll-into-view": "^1.2.0",
+    "dora-plugin-upload": "^0.3.1",
+    "enquire.js": "^2.1.1",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-babel": "^3.0.0",
+    "eslint-plugin-import": "^1.11.1",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-markdown": "*",
+    "eslint-plugin-react": "^6.1.1",
+    "eslint-tinker": "^0.3.1",
+    "history": "2.x",
+    "jsonml-to-react-component": "~0.2.0",
+    "jsonml.js": "^0.1.0",
+    "jsonp": "^0.2.0",
+    "lesshint": "^2.1.0",
+    "lodash.debounce": "^4.0.6",
+    "postcss-pxtorem": "^3.3.1",
+    "pre-commit": "1.x",
+    "promise": "~7.0.4",
+    "qrcode.react": "^0.6.1",
+    "querystring": "^0.2.0",
+    "rc-form": "1.x",
+    "rc-queue-anim": "^0.11.12",
+    "rc-scroll-anim": "~0.3.0",
+    "rc-tween-one": "~0.6.20",
+    "react": "~15.3.1",
+    "react-addons-test-utils": "^15.2.0",
+    "react-copy-to-clipboard": "^4.0.1",
+    "react-document-title": "^2.0.1",
+    "react-dom": "~15.3.1",
+    "react-github-button": "^0.1.9",
+    "react-intl": "^2.0.1",
+    "react-native": "~0.34.0",
+    "react-native-code-push": "^1.13.5-beta",
+    "react-native-router-flux": "^3.30.3",
+    "react-router": "^2.0.0",
+    "react-stateless-wrapper": "~1.0.2",
+    "reqwest": "~2.0.5"
+  },
+  "directories": {},
+  "dist": {
+    "noattachment": false,
+    "shasum": "9a9fc38e267e9300e0f80f44adb4d15ba14c9f02",
+    "size": 1654766,
+    "tarball": "http://registry.npm.taobao.org/antd-mobile/download/antd-mobile-0.9.12.tgz"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "gitHead": "5a8ab66abf6a84c8ac5979bf481c68720cfe17f0",
+  "homepage": "http://mobile.ant.design",
+  "keywords": [
+    "ant",
+    "design",
+    "react",
+    "react-component",
+    "component",
+    "components",
+    "ui",
+    "framework",
+    "frontend"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "email": "afc163@gmail.com",
+      "name": "afc163"
+    },
+    {
+      "email": "charminglv@gmail.com",
+      "name": "heatroom"
+    },
+    {
+      "email": "pengsencai1986@gmail.com",
+      "name": "pingan1927"
+    },
+    {
+      "email": "qi.liqi07@gmail.com",
+      "name": "qi.liqi07"
+    },
+    {
+      "email": "rjmuqiang@gmail.com",
+      "name": "silentcloud"
+    },
+    {
+      "email": "hualei5280@gmail.com",
+      "name": "warmhug"
+    },
+    {
+      "email": "yiminghe@gmail.com",
+      "name": "yiminghe"
+    }
+  ],
+  "name": "antd-mobile",
+  "optionalDependencies": {},
+  "pre-commit": [
+    "lint"
+  ],
+  "publish_time": 1481790949910,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ant-design/ant-design-mobile.git"
+  },
+  "scripts": {
+    "_android": "node node_modules/react-native/local-cli/cli.js run-android --root rn-kitchen-sink",
+    "_ios": "node node_modules/react-native/local-cli/cli.js run-ios --project-path rn-kitchen-sink/ios",
+    "android": "concurrently \"antd-tools run watch-tsc\" \"npm run _android\"",
+    "authors": "git log --format='%aN <%aE>' | sort -u | grep -v 'users.noreply.github.com' > AUTHORS.txt",
+    "build": "npm run dist",
+    "build-rn": "antd-tools run tsc && npm run build-rn-ios && npm run build-rn-android",
+    "build-rn-android": "node scripts/rn-mkdir && node node_modules/react-native/local-cli/cli.js bundle --platform android --dev false --entry-file rn-kitchen-sink/index.android.js --bundle-output rn-kitchen-sink/android/bundle/index.android.bundle --assets-dest rn-kitchen-sink/android/bundle",
+    "build-rn-ios": "node scripts/rn-mkdir && node node_modules/react-native/local-cli/cli.js bundle --platform ios --dev false --entry-file rn-kitchen-sink/index.ios.js --bundle-output rn-kitchen-sink/ios/bundle/index.ios.bundle --assets-dest rn-kitchen-sink/ios/bundle",
+    "clean": "antd-tools run clean",
+    "compile": "antd-tools run compile --ignore-error",
+    "demolint": "RUN_ENV=DEMO eslint components/*/demo/*.md --ext '.md'",
+    "deploy": "npm run clean && bisheng gh-pages -c ./site/bisheng.config.js",
+    "dist": "antd-tools run dist",
+    "eslint-fix": "eslint --fix site scripts ./*.js --ext '.js,.jsx' && eslint-tinker ./components/*/demo/*.md",
+    "ios": "concurrently \"antd-tools run watch-tsc\" \"npm run _ios\"",
+    "just-deploy": "npm run clean && bisheng gh-pages -c ./site/bisheng.config.js",
+    "lesshint": "lesshint components/ -r scripts/lesshint-report.js",
+    "lint": "npm run tslint && npm run srclint && npm run demolint && npm run lesshint",
+    "pre-publish": "node ./scripts/build-less-entry",
+    "prepublish": "antd-tools run guard",
+    "pub": "antd-tools run update-self && antd-tools run pub",
+    "rn-start": "node node_modules/react-native/local-cli/cli.js start",
+    "site": "bisheng build -c ./site/bisheng.config.js",
+    "srclint": "eslint site scripts --ext '.js,.jsx'",
+    "start": "bisheng start -c ./site/bisheng.config.js",
+    "test": "npm run lint && npm run dist",
+    "tslint": "antd-tools run ts-lint && npm run compile && rm -rf lib",
+    "watch-tsc": "antd-tools run watch-tsc"
+  },
+  "typings": "lib/index.web.d.ts",
+  "version": "0.9.12"
+}

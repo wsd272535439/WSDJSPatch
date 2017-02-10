@@ -1,0 +1,14 @@
+/// <reference types="react" />
+import React from 'react';
+export interface CardBodyProps {
+    prefixCls?: string;
+    children?: any;
+    className?: string;
+    style?: {};
+}
+export default class CardBody extends React.Component<CardBodyProps, any> {
+    static defaultProps: {
+        prefixCls: string;
+    };
+    render(): JSX.Element;
+}

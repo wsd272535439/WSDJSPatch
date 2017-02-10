@@ -1,0 +1,24 @@
+/// <reference types="react" />
+import React from 'react';
+import TextAreaItemProps from './PropsType';
+export default class TextAreaItem extends React.Component<TextAreaItemProps, any> {
+    static defaultProps: {
+        onChange(): void;
+        onFocus(): void;
+        onBlur(): void;
+        onErrorClick(): void;
+        clear: boolean;
+        error: boolean;
+        editable: boolean;
+        rows: number;
+        value: string;
+        placeholder: string;
+        count: number;
+        keyboardType: string;
+        autoHeight: boolean;
+        last: boolean;
+    };
+    constructor(props: any);
+    onChange: (event: any) => void;
+    render(): JSX.Element;
+}

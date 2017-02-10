@@ -1,0 +1,67 @@
+@import '../../style/themes/default';
+@import '../../style/mixins';
+
+@tabbar-prefix-cls: am-tab-bar;
+
+.@{tabbar-prefix-cls} {
+  overflow: hidden;
+  &-bar {
+    box-sizing: border-box;
+    height: @tab-bar-height;
+    border-top: @border-width-sm solid @border-color-base;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    transition: bottom 0.2s;
+    .box-sizing();
+    &&-hidden {
+      bottom: -@tab-bar-height;
+    }
+    .@{tabbar-prefix-cls}-tab {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      &-image {
+        width: @icon-size-md;
+        height: @icon-size-md;
+        vertical-align: middle;
+      }
+      &-title {
+        font-size: @font-size-icontext;
+        margin: @v-spacing-xs 0 0 0;
+        line-height: 1;
+      }
+    }
+  }
+
+  &-content {
+    zoom: 1;
+
+    .@{tabbar-prefix-cls}-tabpane {
+      overflow: auto;
+    }
+
+    &-animated {
+      transition: transform .3s @ease-in-out-quint;
+      display: flex;
+      will-change: transform;
+
+      .@{tabbar-prefix-cls}-tabpane {
+        box-sizing: border-box;
+        width: 100%;
+        flex-shrink: 0;
+      }
+    }
+
+    &-no-animated {
+      .@{tabbar-prefix-cls}-tabpane-inactive {
+        display: none;
+      }
+    }
+  }
+}

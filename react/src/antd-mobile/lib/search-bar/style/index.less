@@ -1,0 +1,134 @@
+@import '../../style/mixins';
+@import '../../style/themes/default';
+
+@searchPrefixCls: am-search;
+
+/* 默认搜索bar */
+.@{searchPrefixCls} {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 88px;
+  padding: 0 @h-spacing-md;
+  overflow: hidden;
+  background-color: @search-bar-fill;
+  &-input {
+    position: relative;
+    width: 100%;
+    height: @search-bar-input-height;
+    overflow: hidden;
+    background-color: @fill-base;
+    .border-radius(@radius-sm);
+    .@{searchPrefixCls}-synthetic-ph,
+    input[type="search"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .@{searchPrefixCls}-synthetic-ph {
+      z-index: 1;
+      height: @search-bar-input-height;
+      line-height: @search-bar-input-height;
+      width: 100%;
+      transition: width 0.3s;
+      display: block;
+      text-align: center;
+      &-icon {
+        display: inline-block;
+        margin-left: @h-spacing-sm;
+        margin-right: @h-spacing-sm;
+        width: @icon-size-xxs;
+        height: @icon-size-xxs;
+        overflow: hidden;
+        vertical-align: -5px;
+        .encoded-svg-background("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' enable-background='new 0 0 14 14'><g><path fill='@{input-color-icon}' d='M5,1c2.2,0,4,1.8,4,4S7.2,9,5,9S1,7.2,1,5S2.8,1,5,1 M5,0C2.2,0,0,2.2,0,5s2.2,5,5,5s5-2.2,5-5S7.8,0,5,0 L5,0z'/></g><line stroke='@{input-color-icon}' stroke-miterlimit='10' x1='12.6' y1='12.6' x2='8.2' y2='8.2'/></svg>");
+        background-repeat: no-repeat;
+        background-size: @icon-size-xxs auto;
+      }
+      &-placeholder {
+        color: @color-text-placeholder;
+      }
+    }
+    input[type="search"] {
+      z-index: 2;
+      opacity: 0;
+      width: 100%;
+      text-align: left;
+      display: block;
+      color: @color-text-base;
+      height: @search-bar-input-height;
+      font-size: @input-font-size;
+      background-color: @fill-base;
+      border: 0;
+      .border-radius(@radius-sm);
+      &::-webkit-input-placeholder {
+        background: none;
+        text-align: left;
+        color: @color-text-placeholder;
+        // font-size: @input-font-size;
+        // line-height: 1.5;
+      }
+      &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+      }
+    }
+    .@{searchPrefixCls}-clear {
+      position: absolute;
+      z-index: 3;
+      width: @icon-size-xxs;
+      height: @icon-size-xxs;
+      border-radius: 50%;
+      right: @h-spacing-sm;
+      top: 13px;
+      opacity: 0;
+      background-color: @input-color-icon;
+      background-position: center;
+      background-repeat: no-repeat;
+      .encoded-svg-background("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'><circle cx='14' cy='14' r='14' fill='@{input-color-icon}'/><line stroke='#ffffff' stroke-width='2' stroke-miterlimit='10' x1='8' y1='8' x2='20' y2='20'/><line fill='none' stroke='#ffffff' stroke-width='2' stroke-miterlimit='10' x1='20' y1='8' x2='8' y2='20'/></svg>");
+      background-size: @icon-size-xxs auto;
+      transition: all .3s;
+      &:active {
+        .encoded-svg-background("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'><circle cx='14' cy='14' r='14' fill='@{input-color-icon-tap}'/><line stroke='#ffffff' stroke-width='2' stroke-miterlimit='10' x1='8' y1='8' x2='20' y2='20'/><line fill='none' stroke='#ffffff' stroke-width='2' stroke-miterlimit='10' x1='20' y1='8' x2='8' y2='20'/></svg>");
+      }
+      &-show {
+        opacity: 1;
+      }
+    }
+    flex: 1;
+  }
+  &-cancel {
+    flex: none;
+    opacity: 0;
+
+    margin-left: @h-spacing-md;
+    height: 88px;
+    line-height: 88px;
+    font-size: @link-button-font-size;
+    color: @brand-primary;
+    text-align: right;
+
+    &-anim {
+      transition: margin-right 0.3s, opacity 0.3s;
+      transition-delay: 0.1s;
+    }
+    &-show {
+      opacity: 1;
+    }
+  }
+  &.@{searchPrefixCls}-start {
+    .@{searchPrefixCls}-input {
+      input[type="search"] {
+        opacity: 1;
+        padding-left: @h-spacing-sm * 2 + @icon-size-xxs;
+        &::-webkit-input-placeholder {
+          // display: none;
+          color: transparent;
+        }
+      }
+      .@{searchPrefixCls}-synthetic-ph {
+        z-index: 3;
+        width: auto;
+      }
+    }
+  }
+}

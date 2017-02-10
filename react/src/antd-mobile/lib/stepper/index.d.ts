@@ -1,0 +1,12 @@
+/// <reference types="react" />
+import React from 'react';
+import StepProps from './PropsType';
+export default class Stepper extends React.Component<StepProps, any> {
+    static defaultProps: {
+        step: number;
+        readOnly: boolean;
+        disabled: boolean;
+        styles: any;
+    };
+    render(): JSX.Element;
+}

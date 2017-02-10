@@ -1,0 +1,53 @@
+.hairline-remove-right-bottom {
+  border-bottom: 0;
+}
+.hairline-remove-right-bottom:after {
+  display: none;
+}
+.hairline-remove-right-bottom-bak:after {
+  display: none;
+}
+.hairline-remove-left-top:before {
+  display: none;
+}
+.am-tag {
+  border-radius: 6px;
+  display: inline-block;
+  position: relative;
+  font-size: 24px;
+  padding: 0 30px;
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+}
+.am-tag.am-tag-small {
+  height: 28px;
+  line-height: 28px;
+  padding: 0 12px;
+  font-size: 20px;
+}
+.am-tag-normal {
+  background-color: #fff;
+  color: #888;
+  border: 1PX solid #ddd;
+}
+.am-tag-active {
+  background-color: #fff;
+  color: #108ee9;
+  border: 1PX solid #108ee9;
+}
+.am-tag-disabled {
+  color: #bbb;
+  background-color: #ddd;
+  border: 1PX solid #ddd;
+}
+.am-tag-close {
+  position: absolute;
+  top: -16px;
+  left: -10px;
+  color: #ccc;
+  font-size: 30px;
+}
+.am-tag-close:active {
+  color: #888;
+}
