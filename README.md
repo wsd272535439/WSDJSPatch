@@ -22,10 +22,19 @@ npm start
 
 将TMJSPatchClient.h && TMJSPatchClient.m拖入到你的工程目录下  
 
+### 匹配全量下发，AppKey和AppName是必填参数，和网页获取的一样；DefArg为选填，用于条件下发。目前条件只支持uid。
 <pre><code>
 TMJSPatchClient.setDefArg(["uid":xxx])  
 TMJSPatchClient.setAppKey("589ae021685edd000fbb942e", withAppName: "wsd")  
 TMJSPatchClient.sync()
+</pre></code>
+
+### 匹配开发预览
+<pre><code>
+TMJSPatchClient.setDefArg(["uid":xxx])  
+TMJSPatchClient.setAppKey("589ae021685edd000fbb942e", withAppName: "wsd")  
+//TMJSPatchClient.sync()  
+TMJSPatchClient.setDevModel()
 </pre></code>
 
 ### 注意   
@@ -41,8 +50,8 @@ TMJSPatchClient.sync()
      
      
 
-#### //这里的user和pass是你发送邮箱的帐号和授权码。
-
+#### 这里的user和pass是你发送邮箱的帐号和授权码。
+<pre><code>
 var stmpTransport = nodemailer.createTransport("SMTP",{   
  
     host:"smtp.qq.com",//主机 qq邮箱，可修改   
@@ -60,5 +69,6 @@ var stmpTransport = nodemailer.createTransport("SMTP",{  
     }   
     
   });
+  </pre></code>
   
   
